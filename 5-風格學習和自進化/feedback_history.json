@@ -1,0 +1,22 @@
+{
+  "records": [
+    {
+      "id": 0,
+      "date": "2026-06-28",
+      "video": "output_shorts.mp4",
+      "score": 7,
+      "views": 500,
+      "note": "第一次測試",
+      "added_at": "2026-06-28T14:19:52.325Z"
+    },
+    {
+      "id": 1,
+      "date": "2026-06-28",
+      "video": "output_full.mp4",
+      "score": 6,
+      "views": 200,
+      "note": "橫屏版本",
+      "added_at": "2026-06-28T14:19:52.371Z"
+    }
+  ]
+}

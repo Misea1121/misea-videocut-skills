@@ -1,0 +1,65 @@
+{
+  "generated_at": "2026-06-28T14:19:41.054Z",
+  "based_on": {
+    "viral_videos_analyzed": 1,
+    "user_video_score": 73
+  },
+  "comparison": [
+    {
+      "metric": "平均片段長度",
+      "user": "2.1s",
+      "viral": "867s"
+    },
+    {
+      "metric": "靜音占比",
+      "user": "25.8%",
+      "viral": "<10%（估計）"
+    },
+    {
+      "metric": "精彩片段密度",
+      "user": "3.3/分鐘",
+      "viral": "0/分鐘"
+    }
+  ],
+  "rules": [
+    {
+      "category": "靜音處理",
+      "priority": "high",
+      "rule": "靜音過多（25.8%），嚴重拖慢節奏",
+      "action": "在 Skill 3 審核時，把所有 action=delete 的靜音片段全部確認刪除",
+      "impact": "可縮短影片約 18%，節奏大幅提升"
+    },
+    {
+      "category": "內容結構",
+      "priority": "high",
+      "rule": "開頭 3 秒要抓住注意力（火紅影片黃金定律）",
+      "action": "在 highlights.json 中找最高分的片段，放到影片最前面（而非按時間順序）",
+      "impact": "大幅提升留存率，減少觀眾跳離"
+    },
+    {
+      "category": "節奏",
+      "priority": "medium",
+      "rule": "片段稍長可以接受，目前 2.1s vs 火紅影片 867s",
+      "action": "保持現有節奏，適合需要理解複雜內容的影片",
+      "impact": "觀眾理解度更高，適合教學或故事型內容"
+    },
+    {
+      "category": "字幕",
+      "priority": "medium",
+      "rule": "字幕風格：大字、粗體、帶描邊（火紅短影片標準）",
+      "action": "export scripts 的 subtitles force_style 已設定粗體+描邊，可調整 FontSize（目前 22-28）",
+      "impact": "提升字幕可讀性，尤其在手機小螢幕觀看時"
+    },
+    {
+      "category": "輸出長度",
+      "priority": "medium",
+      "rule": "YouTube Shorts 最佳長度：867s 左右",
+      "action": "目前輸出的精彩剪輯若超過 60s，考慮只保留評分最高的前幾段",
+      "impact": "Shorts 演算法對 <60s 的影片推播更積極"
+    }
+  ],
+  "quick_wins": [
+    "靜音過多（25.8%），嚴重拖慢節奏",
+    "開頭 3 秒要抓住注意力（火紅影片黃金定律）"
+  ]
+}

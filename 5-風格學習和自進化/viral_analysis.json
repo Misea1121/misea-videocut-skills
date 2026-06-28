@@ -1,0 +1,33 @@
+{
+  "analyzed_at": "2026-06-28T14:19:06.972Z",
+  "total_videos": 1,
+  "success_count": 1,
+  "videos": [
+    {
+      "source": "D:\\code.2.0\\Vid\\source.mp4",
+      "file": "source.mp4",
+      "duration_sec": 867,
+      "resolution": "1920x1080",
+      "fps": 30,
+      "scene_changes": 0,
+      "cuts_per_minute": 0,
+      "avg_clip_length_sec": 866.966667,
+      "pacing": "slow",
+      "audio": {
+        "max_db": 0,
+        "mean_db": -25.7
+      },
+      "content_structure": {
+        "opening_0_20pct": "173s 以內",
+        "climax_40_70pct": "347-607s",
+        "ending_80pct_on": "694s 之後"
+      }
+    }
+  ],
+  "aggregated": {
+    "avg_duration_sec": 867,
+    "avg_cuts_per_minute": 0,
+    "avg_clip_length_sec": 867,
+    "dominant_pacing": "slow"
+  }
+}
