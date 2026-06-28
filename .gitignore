@@ -1,0 +1,1 @@
+.env\nlog/\nmemory/\noutput/\n*.mp4\n*.mov\n*.m4a\n*.wav\n*.zip\n.DS_Store\nnode_modules/\n"
