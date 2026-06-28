@@ -1,1 +1,37 @@
-{\n  \"name\": \"misea-videocut-skills\",\n  \"version\": \"0.1.0\",\n  \"description\": \"AI-powered video editing skill for gaming livestreams, VTuber content, and short-form videos\",\n  \"license\": \"Apache-2.0\",\n  \"author\": \"Misea1121\",\n  \"homepage\": \"https://github.com/Misea1121/misea-videocut-skills#readme\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"git+https://github.com/Misea1121/misea-videocut-skills.git\"\n  },\n  \"bugs\": {\n    \"url\": \"https://github.com/Misea1121/misea-videocut-skills/issues\"\n  },\n  \"bin\": {\n    \"misea-videocut-skills\": \"bin/cli.js\"\n  },\n  \"files\": [\n    \"bin/\",\n    \"README.md\",\n    \"LICENSE\"\n  ],\n  \"keywords\": [\n    \"videocut\",\n    \"video-editing\",\n    \"claude-code\",\n    \"gaming\",\n    \"livestream\",\n    \"vtuber\",\n    \"shorts\",\n    \"youtube\"\n  ],\n  \"engines\": {\n    \"node\": \">=18\"\n  }\n}\n"
+{
+  "name": "misea-videocut-skills",
+  "version": "0.1.0",
+  "description": "AI-powered video editing skill for gaming livestreams, VTuber content, and short-form videos",
+  "license": "Apache-2.0",
+  "author": "Misea1121",
+  "homepage": "https://github.com/Misea1121/misea-videocut-skills#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Misea1121/misea-videocut-skills.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Misea1121/misea-videocut-skills/issues"
+  },
+  "bin": {
+    "misea-videocut-skills": "bin/cli.js"
+  },
+  "files": [
+    "bin/",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "videocut",
+    "video-editing",
+    "claude-code",
+    "gaming",
+    "livestream",
+    "vtuber",
+    "shorts",
+    "youtube"
+  ],
+  "engines": {
+    "node": ">=18"
+  }
+}
+

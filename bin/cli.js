@@ -1,1 +1,31 @@
-#!/usr/bin/env node\n\nconst fs = require('fs');\nconst path = require('path');\nconst os = require('os');\n\nconst args = process.argv.slice(2);\nconst command = args[0];\n\nconst repoName = 'misea-videocut-skills';\n\nfunction install() {\n  console.log('🎬 misea-videocut-skills installer');\n  console.log('===================================\\n');\n  console.log('✅ 安裝完成！');\n  console.log();\n  console.log('📚 下一步：');\n  console.log('   1. 在 Claude Code 中使用');\n  console.log('   2. 查看 README.md 了解詳情');\n  console.log();\n}\n\nif (command === 'install') {\n  install();\n} else {\n  console.log('misea-videocut-skills - AI 驅動的遊戲實況剪輯 Skill 包');\n  console.log();\n  console.log('用法：npx misea-videocut-skills install');\n}\n"
+#!/usr/bin/env node
+
+const fs = require('fs');
+const path = require('path');
+const os = require('os');
+
+const args = process.argv.slice(2);
+const command = args[0];
+
+const repoName = 'misea-videocut-skills';
+
+function install() {
+  console.log('🎬 misea-videocut-skills installer');
+  console.log('===================================\
+');
+  console.log('✅ 安裝完成！');
+  console.log();
+  console.log('📚 下一步：');
+  console.log('   1. 在 Claude Code 中使用');
+  console.log('   2. 查看 README.md 了解詳情');
+  console.log();
+}
+
+if (command === 'install') {
+  install();
+} else {
+  console.log('misea-videocut-skills - AI 驅動的遊戲實況剪輯 Skill 包');
+  console.log();
+  console.log('用法：npx misea-videocut-skills install');
+}
+

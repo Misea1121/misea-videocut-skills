@@ -1,1 +1,12 @@
-.env\nlog/\nmemory/\noutput/\n*.mp4\n*.mov\n*.m4a\n*.wav\n*.zip\n.DS_Store\nnode_modules/\n"
+.env
+log/
+memory/
+output/
+*.mp4
+*.mov
+*.m4a
+*.wav
+*.zip
+.DS_Store
+node_modules/
+
