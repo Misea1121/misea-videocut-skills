@@ -10,18 +10,18 @@ source: https://github.com/Misea1121/misea-videocut-skills
 > 分析火紅視頻特徵，自動優化你的剪輯風格
 
 ## 快速使用
+
+```
 用 misea-videocut-skills:風格學習，分析這 5 個視頻:
-
 https://www.youtube.com/shorts/d7wkmKCVbw4
-
 https://www.youtube.com/shorts/hMFXVYbxyao
-
 https://www.youtube.com/shorts/TbWf0JohM6A
-
 https://www.youtube.com/shorts/yu2ZyjgHMhw
-
 https://www.youtube.com/shorts/OINmeXGzDb4
+
 然後應用到我的剪輯風格裡。
+```
+
 ## 分析維度
 
 ### 1. 節奏
@@ -53,50 +53,35 @@ https://www.youtube.com/shorts/OINmeXGzDb4
 - 結尾方式
 
 ## 工作流
-下載視頻分析
 
-├─ 下載 5 個視頻
+```
+1. 下載視頻分析
+   ├─ 下載 5 個視頻
+   ├─ 提取基本信息（長度、節奏、字幕）
+   └─ 轉錄對話
+    ↓
+2. 特徵提取
+   ├─ 分析節奏（平均鏡頭長 2-3 秒）
+   ├─ 檢測文字疊印（大號、黃色描邊）
+   ├─ 提取音樂段落
+   └─ 識別視覺轉場
+    ↓
+3. 特徵保存
+   → viral_analysis.json
+    ↓
+4. Claude 分析
+   └─ 理解「為什麼這個視頻火」
+    ↓
+5. 規則生成
+   ├─ 更新鏡頭長度規則
+   ├─ 更新字幕參數
+   ├─ 更新音樂選擇邏輯
+   └─ 更新視覺效果
+    ↓
+6. 應用到用戶風格
+   └─ 下次剪輯自動應用
+```
 
-├─ 提取基本信息（長度、節奏、字幕）
-
-└─ 轉錄對話
-
-↓
-特徵提取
-
-├─ 分析節奏（平均鏡頭長 2-3 秒）
-
-├─ 檢測文字疊印（大號、黃色描邊）
-
-├─ 提取音樂段落
-
-└─ 識別視覺轉場
-
-↓
-特徵保存
-
-→ viral_analysis.json
-
-↓
-Claude 分析
-
-└─ 理解「為什麼這個視頻火」
-
-↓
-規則生成
-
-├─ 更新鏡頭長度規則
-
-├─ 更新字幕參數
-
-├─ 更新音樂選擇邏輯
-
-└─ 更新視覺效果
-
-↓
-應用到用戶風格
-
-└─ 下次剪輯自動應用
 ## 輸出
 
 ```json

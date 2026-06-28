@@ -10,8 +10,12 @@ source: https://github.com/Misea1121/misea-videocut-skills
 > 自動分析搞笑時刻、無理頭對話、驚喜反應，生成剪輯建議
 
 ## 快速使用
+
+```
 用 misea-videocut-skills:智能分析，找出這個 Valorant 直播裡所有搞笑時刻和無理頭對話。
 用 misea-videocut-skills:智能分析，分析這個恐怖遊戲片段，找出所有驚嚇反應。
+```
+
 ## 檢測類型
 
 ### 1. 轉錄（Transcription）
@@ -22,7 +26,7 @@ source: https://github.com/Misea1121/misea-videocut-skills
 ### 2. 靜音檢測（Silence Detection）
 - ≤0.2s：忽略
 - 0.2-1s：標記
-- >1s：建議刪除
+- \>1s：建議刪除
 
 ### 3. 精彩時刻檢測（Highlight Detection）
 
@@ -47,40 +51,29 @@ source: https://github.com/Misea1121/misea-videocut-skills
 - 音頻轉場
 
 ## 工作流
+
+```
 輸入：source.mp4 + audio.mp3
-
-↓
-
-轉錄（Whisper）
-
-→ subtitles_words.json
-
-↓
-靜音檢測
-
-→ silence_segments.json
-
-↓
-精彩時刻檢測
-
-→ highlights.json
-
-↓
-場景切換檢測
-
-→ scene_changes.json
-
-↓
-風格分析（對比火紅視頻）
-
-→ style_suggestions.json
-
-↓
-生成分鏡建議
-
-↓
-
+    ↓
+1. 轉錄（Whisper）
+    → subtitles_words.json
+    ↓
+2. 靜音檢測
+    → silence_segments.json
+    ↓
+3. 精彩時刻檢測
+    → highlights.json
+    ↓
+4. 場景切換檢測
+    → scene_changes.json
+    ↓
+5. 風格分析（對比火紅視頻）
+    → style_suggestions.json
+    ↓
+6. 生成分鏡建議
+    ↓
 輸出：suggestions.html（分鏡頁面）
+```
 
 ## 輸出格式
 

@@ -10,8 +10,12 @@ source: https://github.com/Misea1121/misea-videocut-skills
 > 自動生成 YouTube Shorts（9:16）和完整版（16:9），加字幕和音樂
 
 ## 快速使用
+
+```
 用 misea-videocut-skills:多格式輸出，幫我生成 YouTube Shorts 版本（9:16），加上簡潔字幕和配樂。
 用 misea-videocut-skills:多格式輸出，生成 YouTube 完整版（16:9）和 Shorts 版本，都要字幕。
+```
+
 ## 輸出格式
 
 ### 1. YouTube Shorts（豎屏）
@@ -40,38 +44,27 @@ source: https://github.com/Misea1121/misea-videocut-skills
 - **轉場**：音樂轉場同步於鏡頭切換
 
 ## 工作流
+
+```
 輸入：confirmed_cuts.json + source.mp4 + subtitles.srt
-
-↓
-
-根據確認的片段裁剪視頻
-
-↓
-生成豎屏版本（9:16）
-
-├─ 自動居中
-
-├─ 添加字幕
-
-└─ 配音樂
-
-↓
-生成橫屏版本（16:9）
-
-├─ 保持原比例
-
-├─ 添加字幕
-
-└─ 配音樂
-
-↓
-
+    ↓
+1. 根據確認的片段裁剪視頻
+    ↓
+2. 生成豎屏版本（9:16）
+    ├─ 自動居中
+    ├─ 添加字幕
+    └─ 配音樂
+    ↓
+3. 生成橫屏版本（16:9）
+    ├─ 保持原比例
+    ├─ 添加字幕
+    └─ 配音樂
+    ↓
 輸出：
-
-
-output_shorts.mp4（Shorts 版本）
-output_full.mp4（完整版）
-subtitle.srt（字幕文件）
+- output_shorts.mp4（Shorts 版本）
+- output_full.mp4（完整版）
+- subtitle.srt（字幕文件）
+```
 
 ## 腳本
 

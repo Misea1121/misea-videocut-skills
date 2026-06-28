@@ -10,7 +10,11 @@ source: https://github.com/Misea1121/misea-videocut-skills
 > 交互式分鏡頁面，確認每個切割點後再輸出
 
 ## 快速使用
+
+```
 用 misea-videocut-skills:審核預覽，給我看分鏡頁面，我確認後再輸出成片。
+```
+
 ## 功能
 
 1. **分鏡頁面（Storyboard）**
@@ -29,27 +33,22 @@ source: https://github.com/Misea1121/misea-videocut-skills
    - 添加備註
 
 ## 工作流
+
+```
 輸入：suggestions.html（分鏡建議）
-
-↓
-
-啟動審核服務器（localhost:3000）
-
-↓
-用戶在瀏覽器中審核
-
-├─ 查看每個片段
-
-├─ 手動調整時間
-
-└─ 確認或拒絕
-
-↓
-導出確認結果
-
-↓
-
+    ↓
+1. 啟動審核服務器（localhost:3000）
+    ↓
+2. 用戶在瀏覽器中審核
+    ├─ 查看每個片段
+    ├─ 手動調整時間
+    └─ 確認或拒絕
+    ↓
+3. 導出確認結果
+    ↓
 輸出：confirmed_cuts.json
+```
+
 ## 腳本
 
 - `generate_storyboard.js` - 生成分鏡頁面
