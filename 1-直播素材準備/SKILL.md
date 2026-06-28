@@ -36,6 +36,22 @@ source: https://github.com/Misea1121/misea-videocut-skills
 - metadata.json（視頻信息）
 ```
 
+## 執行順序（重要）
+
+三支腳本必須按照以下順序執行，不能跳過或顛倒：
+
+1. `screen_record_prep.js <原始檔路徑>` → 先把原始素材標準化，產生 **source.mp4**
+2. `format_detection.js <source.mp4路徑>` → 分析 **source.mp4**，產生 **metadata.json**
+3. `extract_livestream.js <原始檔或source.mp4路徑>` → 提取音頻，產生 **audio.mp3**
+
+**為什麼順序重要？**
+
+`metadata.json` 必須反映「最終標準化素材」的格式（例如 30fps）。
+如果直接拿原始檔（可能是 60fps）去執行 `format_detection.js`，
+記錄的就是原始檔的參數，和實際輸出的 `source.mp4` 對不起來。
+後面 Skill 2 讀取 `metadata.json` 時，就會拿到錯誤的影片資訊（幀率、碼率等），
+導致分析結果出錯。
+
 ## 支持格式
 
 | 格式 | 支持 |
