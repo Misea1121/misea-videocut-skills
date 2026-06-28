@@ -1,0 +1,1 @@
+# Attribution Notice\n\nThis project is inspired by and builds upon:\n- **chengfeng-videocut-skills** by @Agentchengfeng\n  - GitHub: https://github.com/Agentchengfeng/chengfeng-videocut-skills\n  - License: Apache License 2.0\n\n## License\n\nThis project uses Apache License 2.0. See LICENSE file for details.\n"
