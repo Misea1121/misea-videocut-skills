@@ -20,14 +20,14 @@ const outputJson = path.join(outputDir, 'transcript.json');
 const helperScript = path.join(__dirname, 'whisper_helper.py');
 
 console.log(`🎙  開始轉錄：${inputFile}`);
-console.log(`🤖 使用模型：medium（第一次執行會下載模型約 1.5 GB，請耐心等候）`);
+console.log(`🤖 使用模型：turbo（第一次執行會下載模型約 800 MB，請耐心等候）`);
 console.log(`📁 輸出位置：${outputJson}`);
 console.log('');
 console.log('── Whisper 進度輸出 ──');
 
 let rawOutput = '';
 
-const py = spawn('python', [helperScript, inputFile, 'medium'], {
+const py = spawn('python', [helperScript, inputFile, 'turbo'], {
   env: { ...process.env, PYTHONIOENCODING: 'utf-8' }
 });
 
